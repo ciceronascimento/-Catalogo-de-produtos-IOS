@@ -7,3 +7,9 @@ Product catalog for IOS devices.
 
 - [@ciceronascimento](https://github.com/ciceronascimento)
 
+  
+## Screenshots
+
+![App Screenshot](https://i.imgur.com/xpZ3zZS.png)
+
+  
