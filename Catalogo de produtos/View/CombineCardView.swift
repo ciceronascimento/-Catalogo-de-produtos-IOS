@@ -9,6 +9,17 @@ import UIKit
 
 class CombineCardView: UIView{
     
+    var produto: Produto? {
+        didSet {
+            if let produto = produto {
+                fotoImageView.image = UIImage(named: produto.foto)
+                nomeLabel.text = produto.nome
+                precoLabel.text = produto.preco
+                descricaoLabel.text = produto.frase
+            }
+        }
+    }
+    
     let fotoImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "roupa-4")

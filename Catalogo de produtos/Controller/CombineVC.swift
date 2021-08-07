@@ -16,13 +16,14 @@ class CombineVC: UIViewController {
         
         view.backgroundColor = UIColor.systemGroupedBackground
         
-        self.adicionarCards()
+//        self.adicionarCards()
         self.buscaProdutos()
     }
     
     func buscaProdutos () {
         self.produtos = ProdutoService.shared.buscaProdutos()
-        print(self.produtos)
+        self.adicionarCards()
+        //        print(self.produtos)
     }
 }
 
@@ -31,20 +32,23 @@ extension CombineVC {
         
         for produto in produtos {
             
-            let darkGrayView = CombineCardView()
+            let card = CombineCardView()
 //            darkGrayView.backgroundColor = item == 2 ? .lightGray : .darkGray
-            darkGrayView.frame = CGRect(x: 0, y: 0, width: view.bounds.width - 35, height: view.bounds.height * 0.55)
+            card.frame = CGRect(x: 0, y: 0, width: view.bounds.width - 35, height: view.bounds.height * 0.55)
             
-            darkGrayView.center = view.center
+            card.center = view.center
+            card.produto = produto
+            card.tag = produto.id
             
             //funçao observar clique no card
             
             let gesture = UIPanGestureRecognizer()
             gesture.addTarget(self, action: #selector(handlerCard))
             
-            darkGrayView.addGestureRecognizer(gesture)
+            card.addGestureRecognizer(gesture)
             
-            view.addSubview(darkGrayView)
+            view.insertSubview(card, at: 0)
+            //view.addSubview(card)
         }
         
 
