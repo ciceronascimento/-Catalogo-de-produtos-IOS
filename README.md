@@ -10,6 +10,6 @@ Product catalog for IOS devices.
   
 ## Screenshots
 
-![App Screenshot](https://i.imgur.com/xpZ3zZS.png)
+![App Screenshot](https://i.imgur.com/KWggfEx.png)
 
   
