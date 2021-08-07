@@ -13,6 +13,14 @@
 		DD72CDC726BEB9BC00E8993F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD72CDC526BEB9BC00E8993F /* Main.storyboard */; };
 		DD72CDC926BEB9BE00E8993F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD72CDC826BEB9BE00E8993F /* Assets.xcassets */; };
 		DD72CDCC26BEB9BE00E8993F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD72CDCA26BEB9BE00E8993F /* LaunchScreen.storyboard */; };
+		DD72CDD526BEBA7C00E8993F /* CombineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72CDD426BEBA7C00E8993F /* CombineVC.swift */; };
+		DD72CDD826BEC87D00E8993F /* CombineCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72CDD726BEC87D00E8993F /* CombineCardView.swift */; };
+		DD72CDDB26BEE7A800E8993F /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72CDDA26BEE7A800E8993F /* UIView.swift */; };
+		DD72CDDD26BEEF1F00E8993F /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72CDDC26BEEF1F00E8993F /* UILabel.swift */; };
+		DD72CDE026BEF89700E8993F /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72CDDF26BEF89700E8993F /* Usuario.swift */; };
+		DD72CDE326BEFB7300E8993F /* UsuarioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72CDE226BEFB7300E8993F /* UsuarioService.swift */; };
+		DD72CDE526BEFD5400E8993F /* ProdutoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72CDE426BEFD5400E8993F /* ProdutoService.swift */; };
+		DD72CDE726BEFDBC00E8993F /* Produto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72CDE626BEFDBC00E8993F /* Produto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		DD72CDC826BEB9BE00E8993F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD72CDCB26BEB9BE00E8993F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD72CDCD26BEB9BE00E8993F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD72CDD426BEBA7C00E8993F /* CombineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineVC.swift; sourceTree = "<group>"; };
+		DD72CDD726BEC87D00E8993F /* CombineCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineCardView.swift; sourceTree = "<group>"; };
+		DD72CDDA26BEE7A800E8993F /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		DD72CDDC26BEEF1F00E8993F /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		DD72CDDF26BEF89700E8993F /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		DD72CDE226BEFB7300E8993F /* UsuarioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuarioService.swift; sourceTree = "<group>"; };
+		DD72CDE426BEFD5400E8993F /* ProdutoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdutoService.swift; sourceTree = "<group>"; };
+		DD72CDE626BEFDBC00E8993F /* Produto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Produto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,11 @@
 		DD72CDBE26BEB9BC00E8993F /* Catalogo de produtos */ = {
 			isa = PBXGroup;
 			children = (
+				DD72CDE126BEFB5C00E8993F /* Service */,
+				DD72CDDE26BEF76300E8993F /* Model */,
+				DD72CDD926BEE72A00E8993F /* Lib */,
+				DD72CDD626BEC85900E8993F /* View */,
+				DD72CDD326BEBA5300E8993F /* Controller */,
 				DD72CDBF26BEB9BC00E8993F /* AppDelegate.swift */,
 				DD72CDC126BEB9BC00E8993F /* SceneDelegate.swift */,
 				DD72CDC326BEB9BC00E8993F /* ViewController.swift */,
@@ -65,6 +86,49 @@
 				DD72CDCD26BEB9BE00E8993F /* Info.plist */,
 			);
 			path = "Catalogo de produtos";
+			sourceTree = "<group>";
+		};
+		DD72CDD326BEBA5300E8993F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DD72CDD426BEBA7C00E8993F /* CombineVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DD72CDD626BEC85900E8993F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD72CDD726BEC87D00E8993F /* CombineCardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DD72CDD926BEE72A00E8993F /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				DD72CDDA26BEE7A800E8993F /* UIView.swift */,
+				DD72CDDC26BEEF1F00E8993F /* UILabel.swift */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		DD72CDDE26BEF76300E8993F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD72CDDF26BEF89700E8993F /* Usuario.swift */,
+				DD72CDE626BEFDBC00E8993F /* Produto.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DD72CDE126BEFB5C00E8993F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DD72CDE226BEFB7300E8993F /* UsuarioService.swift */,
+				DD72CDE426BEFD5400E8993F /* ProdutoService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +201,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD72CDE326BEFB7300E8993F /* UsuarioService.swift in Sources */,
+				DD72CDE026BEF89700E8993F /* Usuario.swift in Sources */,
+				DD72CDD526BEBA7C00E8993F /* CombineVC.swift in Sources */,
+				DD72CDE526BEFD5400E8993F /* ProdutoService.swift in Sources */,
 				DD72CDC426BEB9BC00E8993F /* ViewController.swift in Sources */,
+				DD72CDDD26BEEF1F00E8993F /* UILabel.swift in Sources */,
+				DD72CDD826BEC87D00E8993F /* CombineCardView.swift in Sources */,
+				DD72CDE726BEFDBC00E8993F /* Produto.swift in Sources */,
 				DD72CDC026BEB9BC00E8993F /* AppDelegate.swift in Sources */,
+				DD72CDDB26BEE7A800E8993F /* UIView.swift in Sources */,
 				DD72CDC226BEB9BC00E8993F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
