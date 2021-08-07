@@ -9,4 +9,4 @@ Product catalog for IOS devices.
 
 ## Screenshots
 
-![App Screenshot](https://imgur.com/a/O3Iw8PI)
+![App Screenshot](https://imgur.com/xpZ3zZS)
