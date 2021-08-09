@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD3D8DB726C0A40A00B5D831 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3D8DB626C0A40A00B5D831 /* UIImageView.swift */; };
 		DD72CDC026BEB9BC00E8993F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72CDBF26BEB9BC00E8993F /* AppDelegate.swift */; };
 		DD72CDC226BEB9BC00E8993F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72CDC126BEB9BC00E8993F /* SceneDelegate.swift */; };
 		DD72CDC426BEB9BC00E8993F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72CDC326BEB9BC00E8993F /* ViewController.swift */; };
@@ -17,13 +18,12 @@
 		DD72CDD826BEC87D00E8993F /* CombineCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72CDD726BEC87D00E8993F /* CombineCardView.swift */; };
 		DD72CDDB26BEE7A800E8993F /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72CDDA26BEE7A800E8993F /* UIView.swift */; };
 		DD72CDDD26BEEF1F00E8993F /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72CDDC26BEEF1F00E8993F /* UILabel.swift */; };
-		DD72CDE026BEF89700E8993F /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72CDDF26BEF89700E8993F /* Usuario.swift */; };
-		DD72CDE326BEFB7300E8993F /* UsuarioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72CDE226BEFB7300E8993F /* UsuarioService.swift */; };
 		DD72CDE526BEFD5400E8993F /* ProdutoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72CDE426BEFD5400E8993F /* ProdutoService.swift */; };
 		DD72CDE726BEFDBC00E8993F /* Produto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72CDE626BEFDBC00E8993F /* Produto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD3D8DB626C0A40A00B5D831 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		DD72CDBC26BEB9BC00E8993F /* Catalogo de produtos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Catalogo de produtos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD72CDBF26BEB9BC00E8993F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD72CDC126BEB9BC00E8993F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,8 +36,6 @@
 		DD72CDD726BEC87D00E8993F /* CombineCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineCardView.swift; sourceTree = "<group>"; };
 		DD72CDDA26BEE7A800E8993F /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		DD72CDDC26BEEF1F00E8993F /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
-		DD72CDDF26BEF89700E8993F /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
-		DD72CDE226BEFB7300E8993F /* UsuarioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuarioService.swift; sourceTree = "<group>"; };
 		DD72CDE426BEFD5400E8993F /* ProdutoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdutoService.swift; sourceTree = "<group>"; };
 		DD72CDE626BEFDBC00E8993F /* Produto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Produto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,6 +107,7 @@
 			children = (
 				DD72CDDA26BEE7A800E8993F /* UIView.swift */,
 				DD72CDDC26BEEF1F00E8993F /* UILabel.swift */,
+				DD3D8DB626C0A40A00B5D831 /* UIImageView.swift */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -116,7 +115,6 @@
 		DD72CDDE26BEF76300E8993F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DD72CDDF26BEF89700E8993F /* Usuario.swift */,
 				DD72CDE626BEFDBC00E8993F /* Produto.swift */,
 			);
 			path = Model;
@@ -125,7 +123,6 @@
 		DD72CDE126BEFB5C00E8993F /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				DD72CDE226BEFB7300E8993F /* UsuarioService.swift */,
 				DD72CDE426BEFD5400E8993F /* ProdutoService.swift */,
 			);
 			path = Service;
@@ -201,14 +198,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD72CDE326BEFB7300E8993F /* UsuarioService.swift in Sources */,
-				DD72CDE026BEF89700E8993F /* Usuario.swift in Sources */,
 				DD72CDD526BEBA7C00E8993F /* CombineVC.swift in Sources */,
 				DD72CDE526BEFD5400E8993F /* ProdutoService.swift in Sources */,
 				DD72CDC426BEB9BC00E8993F /* ViewController.swift in Sources */,
 				DD72CDDD26BEEF1F00E8993F /* UILabel.swift in Sources */,
 				DD72CDD826BEC87D00E8993F /* CombineCardView.swift in Sources */,
 				DD72CDE726BEFDBC00E8993F /* Produto.swift in Sources */,
+				DD3D8DB726C0A40A00B5D831 /* UIImageView.swift in Sources */,
 				DD72CDC026BEB9BC00E8993F /* AppDelegate.swift in Sources */,
 				DD72CDDB26BEE7A800E8993F /* UIView.swift in Sources */,
 				DD72CDC226BEB9BC00E8993F /* SceneDelegate.swift in Sources */,
